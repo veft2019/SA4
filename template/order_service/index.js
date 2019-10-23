@@ -54,7 +54,7 @@ const configureMessageBroker = channel => {
             total += i.unitPrice * i.quantity;
         });
 
-        Order.create({
+        const order = Order.create({
             customerEmail: dataJson.email,
             totalPrice: totalPrice,
             orderDate: Date.now()
