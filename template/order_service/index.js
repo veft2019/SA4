@@ -46,7 +46,7 @@ const configureMessageBroker = channel => {
 
     channel.consume(orderQueue, data => {
         const dataJson = JSON.parse(data.content.toString());
-        let totalPrice = 0;
+        let total = 0;
     
         console.log(`[x] Received: ${JSON.stringify(dataJson)}`);
     
@@ -56,7 +56,7 @@ const configureMessageBroker = channel => {
 
         const order = Order.create({
             customerEmail: dataJson.email,
-            totalPrice: totalPrice,
+            totalPrice: total,
             orderDate: Date.now()
         }).catch(e => console.error(e));
             
