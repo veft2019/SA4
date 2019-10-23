@@ -1,0 +1,13 @@
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/Debug/netcoreapp3.0/logging_service.csprojAssemblyReference.cache
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/Debug/netcoreapp3.0/logging_service.AssemblyInfoInputs.cache
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/Debug/netcoreapp3.0/logging_service.AssemblyInfo.cs
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/logging_service
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/logging_service.deps.json
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/logging_service.runtimeconfig.json
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/logging_service.runtimeconfig.dev.json
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/logging_service.dll
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/logging_service.pdb
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/bin/Debug/netcoreapp3.0/RabbitMQ.Client.dll
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/Debug/netcoreapp3.0/logging_service.csproj.CopyComplete
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/Debug/netcoreapp3.0/logging_service.dll
+/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/Debug/netcoreapp3.0/logging_service.pdb

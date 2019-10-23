@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/logging_service.csproj": {}
+  },
+  "projects": {
+    "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/logging_service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/logging_service.csproj",
+        "projectName": "logging_service",
+        "projectPath": "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/logging_service.csproj",
+        "packagesPath": "/home/hjortur/.nuget/packages/",
+        "outputPath": "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hjortur/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
