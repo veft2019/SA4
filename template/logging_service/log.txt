@@ -1,0 +1,8 @@
+Log: {"email":"gudruni17@ru.is","items":[{"description":"A","quantity":1,"unitPrice":2000}]}
+Log: {"email":"gudruni17@ru.is","items":[{"description":"B","quantity":1,"unitPrice":2000},{"description":"C","quantity":2,"unitPrice":1001}]}
+Log: {"email":"gudruni17@ru.is","items":[{"description":"O","quantity":1,"unitPrice":2000},{"description":"L","quantity":2,"unitPrice":2000}]}
+Log: {"email":"gudruni17@ru.is","items":[{"description":"A","quantity":1,"unitPrice":1001},{"description":"B","quantity":2,"unitPrice":1000}]}
+Log: {"email":"arnaj17@ru.is","items":[{"description":"A","quantity":1,"unitPrice":1001},{"description":"B","quantity":2,"unitPrice":1000}]}
+Log: {"email":"arnaj17@ru.is","items":[{"description":"A","quantity":1,"unitPrice":31},{"description":"J","quantity":1,"unitPrice":38}]}
+Log: {"email":"arnaj17@ru.is","items":[{"description":"A","quantity":1,"unitPrice":36},{"description":"J","quantity":1,"unitPrice":36}]}
+Log: {"email":"arnaj17@ru.is","items":[{"description":"A","quantity":1,"unitPrice":36},{"description":"J","quantity":1,"unitPrice":36}]}

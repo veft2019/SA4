@@ -43,11 +43,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/logging_service.csproj",
+      "projectUniqueName": "/home/hjortur/Desktop/Veft/SA4/template/logging_service/logging_service.csproj",
       "projectName": "logging_service",
-      "projectPath": "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/logging_service.csproj",
+      "projectPath": "/home/hjortur/Desktop/Veft/SA4/template/logging_service/logging_service.csproj",
       "packagesPath": "/home/hjortur/.nuget/packages/",
-      "outputPath": "/home/hjortur/Desktop/Veft/SAA4/template/logging_service/obj/",
+      "outputPath": "/home/hjortur/Desktop/Veft/SA4/template/logging_service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/hjortur/.nuget/NuGet/NuGet.Config"

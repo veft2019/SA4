@@ -36,38 +36,54 @@ const configureMessageBroker = channel => {
     channel.bindQueue(orderQueue, order, createOrder);
 };
 
+
 (async () => {
     const messageBrokerConnection = await createMessageBrokerConnection();
     const channel = await createChannel(messageBrokerConnection);
-  
     configureMessageBroker(channel);
-  
+
+    console.log("Running...");
+
+    const { order } = messageBrokerInfo.exchanges;
     const { orderQueue } = messageBrokerInfo.queues;
 
     channel.consume(orderQueue, data => {
         const dataJson = JSON.parse(data.content.toString());
+
         let total = 0;
-    
-        console.log(`[x] Received: ${JSON.stringify(dataJson)}`);
-    
-        dataJson.items.forEach(i => {
-            total += i.unitPrice * i.quantity;
+        dataJson.items.forEach((item) => {
+            total += item.quantity * item.unitPrice;
         });
 
-        const order = Order.create({
-            customerEmail: dataJson.email,
-            totalPrice: total,
-            orderDate: Date.now()
-        }).catch(e => console.error(e));
-            
-        await dataJson.items.forEach(async item => {
-            await OrderItem.create({
-                description: item.description,
-                quantity: item.quantity,
-                unitPrice: item.unitPrice,
-                rowPrice: item.unitPrice * item.quantity,
-                orderId: order.id
-            }).catch(e => console.error(e));  
-        });   
+        let newOrder = {
+            "customerEmail": dataJson.email,
+            "totalPrice": total,
+            "orderDate": new Date()
+        }
+
+        Order.create(newOrder, (err, order) => {
+            if(err) {
+                console.log("An error occurred when trying to create a new order!");
+                console.log(err);
+            } else {
+                dataJson.items.forEach((item) => {
+                    let newItem = {
+                        "description": item.description,
+                        "quantity": item.quantity,
+                        "unitPrice": item.unitPrice,
+                        "rowPrice": item.quantity * item.unitPrice,
+                        "orderId": order._id
+                    }
+                    OrderItem.create(newItem, (err) => {
+                        if(err) {
+                            console.log("An error occurred when trying to create a new item in an order!");
+                            console.log(err);
+                        }
+                    })
+                });
+            }
+        });
+        let stringData = data.content.toString()
+        channel.publish(order, stringData, Buffer.from(stringData));
     }, { noAck: true });
 })().catch(e => console.error(e));

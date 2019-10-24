@@ -49,9 +49,9 @@ const configureMessageBroker = channel => {
         const { body } = req;
         const bodyJson = JSON.stringify(body);
     
-        channel.publish(order, createOrder, new Buffer(bodyJson));
+        channel.publish(order, createOrder, Buffer.from(bodyJson));
         console.log(`[x] Sent: ${bodyJson}`);
-        return res.json();
+        return res.sendStatus(200);
         //It should always return 200 OK (it doesn’t care what happens)
       });
 
